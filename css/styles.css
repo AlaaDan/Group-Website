@@ -50,6 +50,7 @@ button {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 10px;
 }
 
 
@@ -102,6 +103,12 @@ header h1 {
     background-color: #FFB939;
 }
 
+.header_side_box_red p, .header_side_box_yellow p {
+    font-size: 11px;
+    opacity: 50%;
+    font-weight: 700;
+}
+
 h3 {
     color: #fff;
     font-family: 'Frank Ruhl Libre', serif;
@@ -114,6 +121,7 @@ h4 {
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 16px;
     font-weight: 700; 
+    margin-top: -2rem ;
 }
 
 .menu {
@@ -150,7 +158,7 @@ body div p:nth-child(1) {
 .financial {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    margin: 0;
+    margin-top: 70px;
     margin-left: 20px;
     color: #fff;
 }
@@ -169,6 +177,7 @@ body div p:nth-child(1) {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+    margin: 70px 0px 0px 20px;
 }
 
 
@@ -181,7 +190,7 @@ body div p:nth-child(1) {
     border-radius: 5px;
     background-repeat: no-repeat;
     position: relative;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 .card_1 {
@@ -212,7 +221,7 @@ body div p:nth-child(1) {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin: 80px 20px 20px 20px;
+    margin: 50px 20px 20px 20px;
     text-align: center;
 }
 
@@ -220,9 +229,9 @@ body div p:nth-child(1) {
     font-weight: 700;
     font-size: 11px;
     line-height: 18px;
-    margin: 10px;
     color: #00000099;
     opacity: 60%; 
+    padding: 1rem;
 }
 
 .white_box_1 {
@@ -356,25 +365,78 @@ body nav p:nth-child(4) {
     color: #000;
 }
 
-/* gör grid */
 .mail{
     width: 1000px;
     height: 544px;
     background-color: #A9A19E;
     display: flex;
     flex-direction: column;
-    padding:1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 6rem;
 }
 
 textarea{
     resize: none;
     padding: 10px;
+    border: none;
+    border-radius: 2px;
 }
-
 
 form p{
     color: white;
+    margin-top: 1rem;
 }
-/* form button{
+
+form{
+    flex-direction: column;
+    display: flex;
+}
+
+form button{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.mail h1{
+    color: white;
+}
+
+.map{
+    display: flex;
+    width: 1000px;
+    height: 407px;
+    background-image: url(../img/map-contact.png);
+    color: #fff;
+}
+
+.map_square{
+    width: 323px;
+    height: 206px;
+    background-color: #FAB131;
+    padding: 1.5rem;
+    margin: 45px 0 auto 86px;
+}
+
+.map_square p{
+    color: #fff;
+    opacity: 80%;
+}
+
+.map img{
+    width: 70px;
+    height: 112px;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    align-self: center;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
     
-} */
+.grow:hover { 
+    transform: scale(1.1); 
+    }
